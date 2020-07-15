@@ -1,0 +1,8 @@
+<form>
+    <input name="email" type="text" [(ngModel)]="email" placeholder="Enter email...">
+    <input name="password" type="password" [(ngModel)]= "password" placeholder="Enter password..">
+    <input name="submitBtn" type="submit" title="Submit" (click)="submitForm()">
+</form>
+
+{{email}}{{password}}
+<router-outlet></router-outlet>

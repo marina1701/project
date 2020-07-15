@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--<link rel="stylesheet" href="css/styles.css">-->
+    <title>Practice App</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Candy Land</h1>
+            </div>
+       
+        <nav>
+            <div>
+                <li><a routerLink="/app-home">Home</a></li>
+                <li><a routerLink="/app-about" >About</a></li>
+                <li><a href="services.html">Customize</a></li>
+                <li><a *ngIf="isLoggedIn">Logout</a></li>
+            </div>
+        </nav>
+         </div>
+    </header>
+    <section id="overViewSection">
+        <div class="container">
+            <h1>The sweetest destination on Earth</h1>
+            <p>It's more than a just a store its an experience.</p>
+            <p>Come and indulge into our wide variety of mouthwatering candies</p>
+        </div>
+    </section>
+    <section id="deliverySection">
+        <div class="container">
+           <H1>Get Online delivery</H1>
+           <form>
+            <textarea rows="2" cols="40" name="address" placeholder="Enter Address..."></textarea>
+            <input type="button" id="submitBtn"value="submit">
+           </form>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="../../assets/belgium.jpg">
+                <h3>Dark Chocolate</h3>
+                <p>Rs. 350</p>
+            </div>
+            <div class="box">
+                <img src="../../assets/marshy.jpg">
+                <h3>Marshmallows</h3>
+                <p>RS. 160</p>
+            </div>
+            <div class="box">
+                <img src="../../assets/fruitjelly.jpg">
+                <h3>Fruit Jelly</h3>
+                <p>Rs. 140</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Candy Land Copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>
+<router-outlet></router-outlet>
